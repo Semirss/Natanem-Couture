@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Links */
+a {
+  font-weight: 500;
+  color: #60a5fa; /* Tailwind blue-400 */
+  text-decoration: none;
+}
+a:hover {
+  color: #3b82f6; /* Tailwind blue-500 */
+}
+
+/* Body */
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: inherit;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Headings */
+h1 {
+  font-size: 2.25rem; /* text-3xl */
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+/* Buttons */
+button {
+  border-radius: 0.5rem; /* rounded-lg */
+  border: 1px solid transparent;
+  padding: 0.5em 1em;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1f2937; /* gray-800 */
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  border-color: #3b82f6; /* blue-500 */
+  background-color: #374151; /* gray-700 */
+}
+
+button:focus,
+button:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+/* Light mode overrides */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #1f2937; /* gray-800 */
+    background-color: #f9fafb; /* gray-50 */
+  }
+
+  a {
+    color: #2563eb; /* blue-600 */
+  }
+
+  a:hover {
+    color: #1d4ed8; /* blue-700 */
+  }
+
+  button {
+    background-color: #f3f4f6; /* gray-100 */
+    color: #1f2937; /* gray-800 */
+  }
+
+  button:hover {
+    background-color: #e5e7eb; /* gray-200 */
+  }
+}
