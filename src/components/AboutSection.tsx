@@ -1,42 +1,29 @@
 import React from 'react';
+import './AboutSection.css';
 
 const AboutSection: React.FC = () => {
   return (
-    <section className="bg- py-8 sm:py-12 md:py-16 lg:py-20 px-4 sm:px-6 md:px-8 overflow-hidden">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-6 sm:gap-8 md:gap-12 relative">
-        <div className="w-full md:w-1/2 relative z-20">
+    <section className=" py-8 sm:py-12 md:py-16 lg:py-20 px-4 sm:px-6 md:px-8 overflow-hidden mx-auto" style={{justifyContent: 'center'}}>
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-6 sm:gap-8 md:gap-12 relative"style={{justifyContent: 'center'}}>
+        <div className="w-full md:w-1/2 relative z-20"style={{justifyContent: 'center'}}>
           <div className="relative bg-white/90 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-xl shadow-xl overflow-visible flex flex-col items-center sm:items-start sm:flex-row gap-4 sm:gap-6">
             <div className="flex justify-center w-full sm:w-auto">
-              <img
-                src="/natanem2.jpg"
-                alt="Inside Main Art"
-                className="w- sm:w-1/4 min-w-[100px] sm:min-w-[120px] rounded-lg shadow-md object-cover"
-              />
             </div>
 
-            <div className="relative z-10 w-full justify-center">
+            <div className="relative z-10 w-full flex justify-center">
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight text-center sm:text-left">
                 Natanem <span className="text-pink-600">Couture</span>
               </h2>
               <p
-                className="text-gray-800  text-center sm:text-left text-base sm:text-lg md:text-xl leading-relaxed mb-6"
+                className="text-gray-800 text-center sm:text-left text-base sm:text-lg md:text-xl leading-relaxed mb-6 max-h-48 sm:max-h-60 font-sans no-scrollbar"
                 style={{
-                  maxHeight: '12rem sm:max-h-15rem',
                   overflowY: 'auto',
-                  fontFamily: ' helvetica, Arial, sans-serif',
-                  scrollbarWidth: 'none',
                   padding: '1rem',
-                  msOverflowStyle: 'none',
                 }}
                 onScroll={(e) => {
                   if (e.currentTarget.scrollLeft !== 0) e.currentTarget.scrollLeft = 0;
                 }}
               >
-                <style>{`
-                  p::-webkit-scrollbar {
-                    display: none;
-                  }
-                `}</style>
                 Natanem Couture is a fashion house based in Addis Ababa, Ethiopia, founded by Natanem Wondwossen. The brand is known for its elegant fusion of traditional Ethiopian weaving techniques with modern silhouettes. Each piece is custom-made or ready-to-wear, crafted with authentic storytelling embroidery and a deep respect for cultural heritage. Natanem Couture aspires to bring Ethiopian fashion to the global stage while empowering local artisans and celebrating identity through design.
 
                 Natanem Wondwossen
