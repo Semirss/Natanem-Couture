@@ -6,3 +6,7 @@
 .no-scrollbar::-webkit-scrollbar {
   display: none; /* Chrome, Safari */
 }
+#sec{
+    justify-content: center;
+    width: 80%;
+}
