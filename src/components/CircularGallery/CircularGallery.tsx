@@ -472,11 +472,11 @@ class App {
     const defaultItems = [
       {
         image: `/11.jpg`,
-        text: "Bridge",
+        text: "Astetic",
       },
       {
         image: ` /7.jpg`,
-        text: "Desk Setup",
+        text: "Clean",
       },
       {
         image: ` /3.jpg`,
@@ -484,15 +484,15 @@ class App {
       },
       {
         image: ` /8.jpg`,
-        text: "Strawberries",
+        text: "Breeze",
       },
       {
         image: ` /9.jpg`,
-        text: "Deep Diving",
+        text: "Desert",
       },
       {
         image: ` /10.jpg`,
-        text: "Train Track",
+        text: "Beautiful",
       },
       {
         image: ` /11.jpg`,
@@ -516,7 +516,7 @@ class App {
       },
       {
         image: ` /2.jpg`,
-        text: "Palm Trees",
+        text: "popular",
       },
     ];
     const galleryItems = items && items.length ? items : defaultItems;

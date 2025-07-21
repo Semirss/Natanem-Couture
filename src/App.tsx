@@ -15,7 +15,7 @@ const App: React.FC = () => {
 <div style={{ height: '600px', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: '#000' }}>
 <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 leading-tight text-center sm:text-left ">
                 <span className="text-pink-600">Gallery </span>Collection
-              </h2>  <CircularGallery bend={0} textColor="#ffffff" borderRadius={0.05} scrollEase={0.01}/>
+              </h2>  <CircularGallery bend={0} textColor="#ffffff" borderRadius={0.05} scrollEase={0.05}/>
 </div>
 <Designs />
 <ContactSection />  

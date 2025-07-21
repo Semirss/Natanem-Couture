@@ -36,10 +36,10 @@ export function Nav() {
   }
 
   return (
-    <header className="px-6 py-4 relative z-10 w-full bg-black/90 backdrop-blur-md">
+    <header className="px-6 py-4 relative z-10 w-full  ">
       <div className="flex justify-between items-center">
         {/* Mobile logo image */}
-        <img src="/6.png" alt="NC Logo" className="h-12 w-auto" />
+        <img src="/6.png" alt="NC Logo" className="h-12 w-auto  " />
 
         <button
           onClick={() => setIsOpen(!isOpen)}
