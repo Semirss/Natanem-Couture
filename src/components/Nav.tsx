@@ -36,33 +36,43 @@ export function Nav() {
   }
 
   return (
-    <header className="px-6 py-4 relative z-10 w-full  ">
-      <div className="flex justify-between items-center">
-        {/* Mobile logo image */}
-        <img src="/6.png" alt="NC Logo" className="h-12 w-auto  " />
+ <header className="px-6 py-4 w-full h-14 fixed top-0 left-0 z-50 bg-white/0  shadow-md  border-white/20 transition-all duration-300">
+  <div className="flex justify-between items-center max-w-7xl mx-auto">
+    <img src="/6.png" alt="NC Logo" className="h-10 bg-black/80 w-auto   drop-shadow-md" style={{borderRadius:'20px'}}/>
 
-        <button
-          onClick={() => setIsOpen(!isOpen)}
-          className="text-white focus:outline-none"
-          aria-label="Toggle menu"
-        >
-          <svg
-            className="w-6 h-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            {isOpen ? (
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-            ) : (
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-            )}
-          </svg>
-        </button>
-      </div>
+    <button
+      onClick={() => setIsOpen(!isOpen)}
+      className="text-white focus:outline-none"
+      aria-label="Toggle menu"
+    >
+      <svg
+        className="w-6 h-6"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        {isOpen ? (
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M6 18L18 6M6 6l12 12"
+          />
+        ) : (
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        )}
+      </svg>
+    </button>
+  </div>
+
 
       {isOpen && (
-        <nav className="flex flex-col space-y-4 mt-4 text-center">
+        <nav className="flex flex-col space-y-4 mt-4 text-right">
           <a href="#" className="text-pink-500 transition duration-300 text-sm">Home</a>
           <a href="#designs" className="text-white hover:text-pink-500 transition duration-300 text-sm">Design</a>
           <a href="#gallery" className="text-white hover:text-pink-500 transition duration-300 text-sm">Gallery</a>
