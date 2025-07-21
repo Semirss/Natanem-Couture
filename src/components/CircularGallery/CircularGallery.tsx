@@ -472,51 +472,51 @@ class App {
     const defaultItems = [
       {
         image: `/11.jpg`,
-        text: "Astetic",
+        text: "",
       },
       {
         image: ` /7.jpg`,
-        text: "Clean",
+        text: "",
       },
       {
         image: ` /3.jpg`,
-        text: "Waterfall",
+        text: "",
       },
       {
         image: ` /8.jpg`,
-        text: "Breeze",
+        text: "",
       },
       {
         image: ` /9.jpg`,
-        text: "Desert",
+        text: "",
       },
       {
         image: ` /10.jpg`,
-        text: "Beautiful",
+        text: "",
       },
       {
         image: ` /11.jpg`,
-        text: "Santorini",
+        text: "",
       },
       {
         image: ` /12.jpg`,
-        text: "Blurry Lights",
+        text: "",
       },
       {
         image: ` /4.jpg`,
-        text: "New York",
+        text: "",
       },
       {
         image: ` /9.jpg`,
-        text: "Good Boy",
+        text: "",
       },
       {
         image: ` /5.jpg`,
-        text: "Coastline",
+        text: "",
       },
       {
         image: ` /2.jpg`,
-        text: "popular",
+        text: "",
       },
     ];
     const galleryItems = items && items.length ? items : defaultItems;
